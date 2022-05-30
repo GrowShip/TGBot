@@ -13,7 +13,6 @@ namespace TGBot
 {
     class Program
     {
-        // private static string token { get; set; } = System.IO.File.ReadAllText(System.IO.Path.Combine(System.IO.Directory.GetCurrentDirectory(), "token.txt"));
         // private static TelegramBotClient Bot;
         
         static async Task Main(string[] args)

@@ -1,0 +1,38 @@
+//Mac/Home/Documents/Visual Studio 2019/VS 2019/TGBot/TGBot/bin/Debug/netcoreapp3.1/TGBot.exe
+//Mac/Home/Documents/Visual Studio 2019/VS 2019/TGBot/TGBot/bin/Debug/netcoreapp3.1/TGBot.deps.json
+//Mac/Home/Documents/Visual Studio 2019/VS 2019/TGBot/TGBot/bin/Debug/netcoreapp3.1/TGBot.runtimeconfig.json
+//Mac/Home/Documents/Visual Studio 2019/VS 2019/TGBot/TGBot/bin/Debug/netcoreapp3.1/TGBot.runtimeconfig.dev.json
+//Mac/Home/Documents/Visual Studio 2019/VS 2019/TGBot/TGBot/bin/Debug/netcoreapp3.1/TGBot.dll
+//Mac/Home/Documents/Visual Studio 2019/VS 2019/TGBot/TGBot/bin/Debug/netcoreapp3.1/TGBot.pdb
+//Mac/Home/Documents/Visual Studio 2019/VS 2019/TGBot/TGBot/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+//Mac/Home/Documents/Visual Studio 2019/VS 2019/TGBot/TGBot/bin/Debug/netcoreapp3.1/System.Threading.Channels.dll
+//Mac/Home/Documents/Visual Studio 2019/VS 2019/TGBot/TGBot/bin/Debug/netcoreapp3.1/Telegram.Bot.dll
+//Mac/Home/Documents/Visual Studio 2019/VS 2019/TGBot/TGBot/bin/Debug/netcoreapp3.1/Telegram.Bot.Extensions.Polling.dll
+//Mac/Home/Documents/Visual Studio 2019/VS 2019/TGBot/TGBot/obj/Debug/netcoreapp3.1/TGBot.csproj.AssemblyReference.cache
+//Mac/Home/Documents/Visual Studio 2019/VS 2019/TGBot/TGBot/obj/Debug/netcoreapp3.1/TGBot.GeneratedMSBuildEditorConfig.editorconfig
+//Mac/Home/Documents/Visual Studio 2019/VS 2019/TGBot/TGBot/obj/Debug/netcoreapp3.1/TGBot.AssemblyInfoInputs.cache
+//Mac/Home/Documents/Visual Studio 2019/VS 2019/TGBot/TGBot/obj/Debug/netcoreapp3.1/TGBot.AssemblyInfo.cs
+//Mac/Home/Documents/Visual Studio 2019/VS 2019/TGBot/TGBot/obj/Debug/netcoreapp3.1/TGBot.csproj.CoreCompileInputs.cache
+//Mac/Home/Documents/Visual Studio 2019/VS 2019/TGBot/TGBot/obj/Debug/netcoreapp3.1/TGBot.csproj.CopyComplete
+//Mac/Home/Documents/Visual Studio 2019/VS 2019/TGBot/TGBot/obj/Debug/netcoreapp3.1/TGBot.dll
+//Mac/Home/Documents/Visual Studio 2019/VS 2019/TGBot/TGBot/obj/Debug/netcoreapp3.1/TGBot.pdb
+//Mac/Home/Documents/Visual Studio 2019/VS 2019/TGBot/TGBot/obj/Debug/netcoreapp3.1/TGBot.genruntimeconfig.cache
+/Users/ilya/RiderProjects/TGBot/TGBot/obj/Debug/netcoreapp3.1/TGBot.csproj.AssemblyReference.cache
+/Users/ilya/RiderProjects/TGBot/TGBot/obj/Debug/netcoreapp3.1/TGBot.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ilya/RiderProjects/TGBot/TGBot/obj/Debug/netcoreapp3.1/TGBot.AssemblyInfoInputs.cache
+/Users/ilya/RiderProjects/TGBot/TGBot/obj/Debug/netcoreapp3.1/TGBot.AssemblyInfo.cs
+/Users/ilya/RiderProjects/TGBot/TGBot/obj/Debug/netcoreapp3.1/TGBot.csproj.CoreCompileInputs.cache
+/Users/ilya/RiderProjects/TGBot/TGBot/obj/Debug/netcoreapp3.1/TGBot.dll
+/Users/ilya/RiderProjects/TGBot/TGBot/obj/Debug/netcoreapp3.1/TGBot.pdb
+/Users/ilya/RiderProjects/TGBot/TGBot/bin/Debug/netcoreapp3.1/TGBot
+/Users/ilya/RiderProjects/TGBot/TGBot/bin/Debug/netcoreapp3.1/TGBot.deps.json
+/Users/ilya/RiderProjects/TGBot/TGBot/bin/Debug/netcoreapp3.1/TGBot.runtimeconfig.json
+/Users/ilya/RiderProjects/TGBot/TGBot/bin/Debug/netcoreapp3.1/TGBot.runtimeconfig.dev.json
+/Users/ilya/RiderProjects/TGBot/TGBot/bin/Debug/netcoreapp3.1/TGBot.dll
+/Users/ilya/RiderProjects/TGBot/TGBot/bin/Debug/netcoreapp3.1/TGBot.pdb
+/Users/ilya/RiderProjects/TGBot/TGBot/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+/Users/ilya/RiderProjects/TGBot/TGBot/bin/Debug/netcoreapp3.1/System.Threading.Channels.dll
+/Users/ilya/RiderProjects/TGBot/TGBot/bin/Debug/netcoreapp3.1/Telegram.Bot.dll
+/Users/ilya/RiderProjects/TGBot/TGBot/bin/Debug/netcoreapp3.1/Telegram.Bot.Extensions.Polling.dll
+/Users/ilya/RiderProjects/TGBot/TGBot/obj/Debug/netcoreapp3.1/TGBot.csproj.CopyComplete
+/Users/ilya/RiderProjects/TGBot/TGBot/obj/Debug/netcoreapp3.1/TGBot.genruntimeconfig.cache

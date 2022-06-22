@@ -45,7 +45,7 @@ namespace TGBot
 
             #region MyRegion Определения переданных файлов
             
-            if (update.Message.Type == Telegram.Bot.Types.Enums.MessageType.Document)
+            if (update.Message != null && update.Message.Type == Telegram.Bot.Types.Enums.MessageType.Document)
             {
                 Console.WriteLine($"{update.Message.Document.FileId}\n" +
                                   $"{update.Message.Document.FileName}\n" +
@@ -58,7 +58,7 @@ namespace TGBot
                     whatIsThis);
                 return;
             }
-            if (update.Message.Type == Telegram.Bot.Types.Enums.MessageType.Audio)
+            if (update.Message != null && update.Message.Type == Telegram.Bot.Types.Enums.MessageType.Audio)
             {
                 Console.WriteLine($"{update.Message.Audio.FileId}\n" +
                                   $"{update.Message.Audio.FileName}\n" +
@@ -71,7 +71,7 @@ namespace TGBot
                     whatIsThis);
                 return;
             }
-            if (update.Message.Type == Telegram.Bot.Types.Enums.MessageType.Voice)
+            if (update.Message != null && update.Message.Type == Telegram.Bot.Types.Enums.MessageType.Voice)
             {
                 Console.WriteLine($"{update.Message.Voice.FileId}\n" +
                                   $"{update.Message.Voice.MimeType}\n" +
@@ -86,7 +86,7 @@ namespace TGBot
                     whatIsThis);
                 return;
             }
-            if (update.Message.Type == MessageType.Photo)
+            if (update.Message != null && update.Message.Type == MessageType.Photo)
             {
                 Console.WriteLine($"{update.Message.Photo.Last().FileId}\n" +
                                   $"{update.Message.Photo.Last().FileUniqueId}");
@@ -163,16 +163,16 @@ namespace TGBot
                 {
                     new[] {InlineKeyboardButton.WithCallbackData("Места", "Выбор места")},
                     new[] {InlineKeyboardButton.WithCallbackData("Комфорт зал", "Комфорт зал")},
-                    new[] {InlineKeyboardButton.WithCallbackData("Места класса", "Повышение класса")},
+                    new[] {InlineKeyboardButton.WithCallbackData("Апгрейд класса", "Повышение класса")},
                     new[] {InlineKeyboardButton.WithCallbackData("Сумка-переноска за мили", "Сумку переноску за мили"),},
                     new[] {InlineKeyboardButton.WithCallbackData("Бизнес", "Бизнес")},
-                    new[] {InlineKeyboardButton.WithCallbackData("Места класса", "Повыш. класса за мили")}
+                    new[] {InlineKeyboardButton.WithCallbackData("Класс за мили", "Повыш. класса за мили")}
                 });
                 await botClient.SendTextMessageAsync(message.Chat.Id, "Выбери что?", replyMarkup: keyboard1);
                 return;
             }
             
-            await botClient.SendTextMessageAsync(message.Chat.Id, $"Ты выбрал:\n{message.Text}");
+            await botClient.SendTextMessageAsync(message.Chat.Id, $"Зачем ты написал:\n{message.Text}");
         }
         
         /// <summary>
@@ -192,13 +192,13 @@ namespace TGBot
             {
               case "audio":
                   name = path;
-                  way = "MyDir/Voice|Audio/" + $"{path}";
+                  way = "MyDir/Audio/" + $"{path}";
                   break;
               case "voice":
                   Random r = new Random();
                   int num = r.Next(0, 100);
                   name = $"{path}_{num}.mpeg";
-                  way = "MyDir/Voice|Audio/" + $"{path}{num}.mpeg";
+                  way = "MyDir/Audio/" + $"{path}{num}.mpeg";
                   break;
               case "document":
                   name = path;
@@ -251,7 +251,7 @@ namespace TGBot
                 foreach (var e in catalogFile)
                 {
                     FileInfo nameFile = new FileInfo($"{e}");
-                    InlineKeyboardMarkup kb = new(new[]{InlineKeyboardButton.WithCallbackData($"{nameFile.Name}", $"Sent_{type}_{nameFile.Name}")});
+                    InlineKeyboardMarkup kb = new(new[]{InlineKeyboardButton.WithCallbackData($"{nameFile.Name}", $"Sent|{type}|{nameFile.Name}")});
                     await botClient.SendTextMessageAsync(callbackQuery.Message.Chat.Id, "▼",replyMarkup: kb);
                 }
                 return;
@@ -259,7 +259,7 @@ namespace TGBot
 
             if (callbackQuery.Data.StartsWith("Sent"))
             {
-                string[] wholeInfoAboutWhatFileIs = callbackQuery.Data.Split('_');
+                string[] wholeInfoAboutWhatFileIs = callbackQuery.Data.Split('|');
                 FileStream fs = new FileStream($"MyDir/{wholeInfoAboutWhatFileIs[1]}/{wholeInfoAboutWhatFileIs[2]}", FileMode.Open);
                 switch (wholeInfoAboutWhatFileIs[1])
                 {
@@ -413,8 +413,11 @@ namespace TGBot
             }
             if (callbackQuery.Data.StartsWith("Повыш"))
             {
-                await botClient.SendTextMessageAsync(callbackQuery.Message.Chat.Id, $"{callbackQuery.Data}:\n2500 рублей");
-                callbackQuery.Data = "1_Классмили_250";
+                InlineKeyboardMarkup keyboard6 = new(new[]
+                {
+                    InlineKeyboardButton.WithCallbackData("2500", "1_Классмили_250"),
+                });
+                await botClient.SendTextMessageAsync(callbackQuery.Message.Chat.Id, $"{callbackQuery.Data}:", replyMarkup: keyboard6);
                 return;
             }
             

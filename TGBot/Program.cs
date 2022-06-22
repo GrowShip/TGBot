@@ -7,7 +7,7 @@ using Telegram.Bot.Types.Enums;
 using Telegram.Bot.Types.ReplyMarkups;
 using Telegram.Bot.Exceptions;
 using Telegram.Bot.Extensions.Polling;
-
+using File = System.IO.File;
 
 namespace TGBot
 {
@@ -17,7 +17,8 @@ namespace TGBot
         
         static async Task Main(string[] args)
         {
-            var botClient = new TelegramBotClient("");
+            string path = "/Users/ilya/Desktop/token.txt";
+            var botClient = new TelegramBotClient(File.ReadAllText(path));
 
             using var cts = new CancellationTokenSource();
             
